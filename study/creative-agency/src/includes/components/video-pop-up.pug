@@ -1,0 +1,14 @@
+//- .video(class="modal fade modal-fullscreen" id="modalLarge" tabindex="-1" role="dialog" aria-labelledby="modalLargeLabel")
+//-     div(class="modal-dialog" role="document")
+//-         .modal-content
+//-            div(class="modal-header")
+//-                 button(type="button" class="close" data-dismiss="modal" aria-label="Close")
+//-                     span(aria-hidden="true") &times
+#video.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
+  .modal-dialog.modal-lg.h-100.w-100.d-flex.align-items-center(role='document' style="max-width:900px")
+    .modal-content
+      .modal-body
+          .moda-body__if
+            <iframe width="900" height="506" src="https://www.youtube.com/embed/nrJtHemSPW4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    button.close(type='button' data-dismiss='modal' aria-label='Close')
+          <i class="fas fa-times"></i>

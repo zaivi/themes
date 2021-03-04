@@ -1,0 +1,62 @@
+.portfolio {
+    padding: 120px 0 0;
+    .title {
+        margin-bottom: 0;
+    }
+    &__filter {
+        margin: 100px 7px 0 7px;
+        width: 100%;
+        .portfolio__grid {
+            list-style: none;
+            padding: 0;
+            position: relative;
+            &-item,
+            &-sizer {
+                width: 25%;
+                @include max-breakpoint(1024) {
+                    width: 33.3%;
+                }
+            }
+            &-item {
+                display: inline-block;
+                overflow: hidden;
+                figure {
+                    margin: 0;
+                    transition: all 0.2s ease-in-out 0s;
+                    will-change: transform;
+                    &:hover {
+                        transform: translateY(-100px);
+                    }
+                    &:hover figcaption {
+                        opacity: 1;
+                    }
+                }
+                figcaption {
+                    position: absolute;
+                    height: auto;
+                    right: 0;
+                    left: 0;
+                    bottom: -112px;
+                    transition: all 0.2s ease-in 0s;
+                    opacity: 0;
+                    padding: 32px;
+                }
+                .item__caption {
+                    text-align: center;
+                    h5 {
+                        font-size: 14px;
+                        color: #232323;
+                        font-weight: 600;
+                        margin-bottom: 6px;
+                        text-transform: uppercase;
+                    }
+                    p {
+                        font-size: 11px;
+                        color: #939393;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}
